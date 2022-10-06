@@ -14,4 +14,4 @@ You can put the `.json` config file on your ODrive by saving the file where you'
 
 `odrivetool restore-config NAME_OF_FILE.json`
 
-changing `NAME_OF_FILE` of course... This is assuming you've installed `odrivetools`.
+changing `NAME_OF_FILE` of course... This is assuming you've installed `odrivetool`.
