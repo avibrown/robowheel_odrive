@@ -1,10 +1,10 @@
----
-
 ### Flashing config file
 
 You can put the `.json` config file on your ODrive by saving the file where you'd like, opening a terminal from the save directory, and running:
 
-`odrivetool restore-config NAME_OF_FILE.json`
+```
+odrivetool restore-config NAME_OF_FILE.json
+```
 
 changing `NAME_OF_FILE` of course... This is assuming you've installed `odrivetools`.
 
