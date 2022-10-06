@@ -14,7 +14,6 @@ You can put the `.json` config file on your ODrive by saving the file where you'
 
 `odrivetool restore-config NAME_OF_FILE.json`
 
-<<<<<<< HEAD
 changing `NAME_OF_FILE` of course... This is assuming you've installed `odrivetools`.
 
 ---
@@ -54,8 +53,7 @@ odrv0.axis1.requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL
 
 odrv0.axis0.controller.input_vel = 0.5
 odrv0.axis1.controller.input_vel = 0.5
+
+# Your motors should be spinning...
 ```
 
-=======
-changing `NAME_OF_FILE` of course... This is assuming you've installed `odrivetool`.
->>>>>>> 2d3fa8b2a89839f800857e417882fcea5c1dd5b4
