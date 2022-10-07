@@ -21,3 +21,9 @@ ros2 run odrive_driver odrive_node
 ```
 ros2 topic pub -r 10 /axis0_vel_sub std_msgs/msg/Float32 "{data: 0.5}"
 ```
+
+#### Alternatively
+if you want to see your wheels move in a lovely sinusoidal fashion, build the `two_wheels_demo` in your `ros2_ws` and run the demo using:
+```
+ros2 run two_wheel_demo run
+```
