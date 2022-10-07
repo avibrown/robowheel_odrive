@@ -18,7 +18,7 @@ class ODriveDemoNode(Node):
 
     def timer_callback(self):
         msg = Float32()
-        msg.data = math.cos(self.i)
+        msg.data = -math.cos(self.i)
         self.axis0_publisher.publish(msg)
 
         msg.data = math.sin(self.i)
