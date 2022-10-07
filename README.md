@@ -6,3 +6,17 @@ This repository will contain configuration files, scripts, and eventually a ROS 
 
 Big thanks to Andy (check out his robot donkeys [here](https://hackaday.io/project/187319-robot-donkeys)!) for sharing his ODrive configuration.
 
+---
+
+### To get moving
+- Paste the "odrive_driver" directory to your `ros2_ws/src`
+- Edit the serial number in `odrive_command.py` to match your own (instructions for getting SN are in the comments of the file)
+- Build the package from within `ros2_ws` using `colcon build --packages-select odrive_driver`
+- Run the node using
+```
+ros2 run odrive_driver odrive_node
+```
+- Then you can publish `vel` or `pos` commands to whichever axis you'd like, for instance:
+```
+ros2 topic pub -r 10 /axis0_vel_sub std_msgs/msg/Float32 "{data: 0.5}"
+```
