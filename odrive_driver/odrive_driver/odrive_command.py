@@ -76,7 +76,6 @@ class ODriveController:
 
     def command_position(self, axis, position):
         if self.armed_pos:
-            #print(f'Commanding position {position} on axis{axis}')
             self.axes[axis].controller.input_pos = position
 
     def get_velocity(self, axis):
