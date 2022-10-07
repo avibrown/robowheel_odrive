@@ -9,7 +9,8 @@ Big thanks to Andy (check out his robot donkeys [here](https://hackaday.io/proje
 ---
 
 ### To get moving
-- Paste the "odrive_driver" directory to your `ros2_ws/src`
+> This assumes you have ROS2 and the ODrive Python library installed...
+- Copy the `odrive_driver` package to your `ros2_ws/src`
 - Edit the serial number in `odrive_command.py` to match your own (instructions for getting SN are in the comments of the file)
 - Build the package from within `ros2_ws` using `colcon build --packages-select odrive_driver`
 - Run the node using
