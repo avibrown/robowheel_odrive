@@ -13,7 +13,7 @@ Big thanks to Andy (check out his robot donkeys [here](https://hackaday.io/proje
 
 If you want to see your wheels move in a lovely sinusoidal fashion like in [this demo](https://www.youtube.com/watch?v=O3zcFxpLdpY&ab_channel=Digi-Key), - Copy the `odrive_driver` and `two_wheel_demo` packages to your `ros2_ws/src`
 - Edit the serial number in `/odrive_driver/odrive_driver/odrive_command.py` to match your own (instructions for getting SN are in the comments of the file)
-- Build the package from within `ros2_ws` using `colcon build`
+- Build the packages from within `ros2_ws` using `colcon build`
 - Run the demo using
 ```
 ros2 run odrive_driver odrive_node // In one terminal
