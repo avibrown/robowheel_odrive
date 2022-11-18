@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'run = two_wheel_demo.demo:main'
+        	'run_demo = two_wheel_demo.demo:main'
         ],
     },
 )
