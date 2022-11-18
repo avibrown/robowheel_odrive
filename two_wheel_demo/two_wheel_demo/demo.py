@@ -16,6 +16,12 @@ class ODriveDemoNode(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
+    def __del__(self):
+        msg = Float32()
+        msg.data = 0.0
+        self.axis0_publisher.publish(msg)
+        self.axis1_publisher.publish(msg)
+
     def timer_callback(self):
         msg = Float32()
         msg.data = -math.cos(self.i)
