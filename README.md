@@ -22,7 +22,7 @@ ros2 run two_wheel_demo run_demo   // In a separate terminal
 
 
 #### Alternatively
-- You can publish `vel` or `pos` commands to whichever axis you'd like, for instance:
+- You can publish `vel` or `pos` commands to whichever axis you'd like, for instance to command a velocity of 1 turn/sec on `axis0`:
 ```
 ros2 topic pub -r 10 /axis0_vel_sub std_msgs/msg/Float32 "{data: 0.5}"
 ```
