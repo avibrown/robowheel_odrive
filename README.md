@@ -16,7 +16,8 @@ If you want to see your wheels move in a lovely sinusoidal fashion like in [this
 - Build the package from within `ros2_ws` using `colcon build`
 - Run the demo using
 ```
-ros2 run two_wheel_demo run
+ros2 run odrive_driver odrive_node // In one terminal
+ros2 run two_wheel_demo run_demo   // In a separate terminal
 ```
 
 
